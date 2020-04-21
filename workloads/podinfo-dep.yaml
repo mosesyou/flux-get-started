@@ -27,7 +27,7 @@ spec:
     spec:
       initContainers:
       - name: init
-        image: alpine:3.10
+        image: alpine:3.10.1
         command:
         - sleep
         - "1"
@@ -47,7 +47,7 @@ spec:
         - --random-error=false
         env:
         - name: PODINFO_UI_MESSAGE
-          value: "Welcome to 2018!"
+          value: "Welcome to 2020!"
         livenessProbe:
           httpGet:
             path: /healthz
